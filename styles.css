@@ -663,4 +663,37 @@ footer p{ color: rgba(255,255,255,.70); }
     height: 360px;
   }
 }
+/* ===== Gallery label: mobile fix ===== */
+@media (max-width: 600px){
+  .gallery__label{
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+
+    padding: 14px 14px;
+    border-radius: 16px;
+  }
+
+  .gallery__label strong{
+    font-size: 16px;
+    line-height: 1.15;
+  }
+
+  .gallery__label span{
+    font-size: 13px;
+    line-height: 1.25;
+  }
+
+  /* Prevent the “tall skinny label” look */
+  .gallery__label strong,
+  .gallery__label span{
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+}@media (max-width: 600px){
+  .gallery__item img{
+    height: 320px;   /* gives overlay room */
+  }
+}
 
