@@ -1,26 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- =========================
+       ✅ HIGHLIGHT: BASICS
+       ========================= -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#111111" />
+
   <title>LuxyNest Cleaning — Luxury Cleaning Across New Jersey</title>
   <meta name="description" content="Luxury residential and office cleaning across New Jersey. Discreet, consistent, detail-driven service with white-glove checklists." />
 
-  <!-- Fonts -->
+  <!-- =========================
+       ✅ HIGHLIGHT: FONTS
+       (Keep or remove—optional)
+       ========================= -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- ✅ Use ONLY styles.css (no inline style in this file) -->
-  <link rel="stylesheet" href="styles.css?v=10">
+  <!-- =========================
+       ✅ HIGHLIGHT: CSS LINK
+       IMPORTANT: Only ONE stylesheet
+       ========================= -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!-- Header -->
+
+  <!-- =========================
+       ✅ HIGHLIGHT: HEADER / NAV
+       ========================= -->
   <header class="header">
     <div class="container nav" role="navigation" aria-label="Primary">
-      <a class="brand" href="#top">
+      <a class="brand" href="#top" aria-label="LuxyNest Home">
         <span class="brand__mark">L</span>
         <span class="brand__text">
           <span class="brand__name">LuxyNest</span>
@@ -34,7 +47,7 @@
     </div>
 
     <nav class="nav__links" id="navLinks">
-      <div class="container">
+      <div class="container nav__linksInner">
         <a class="nav__link" href="#services">Services</a>
         <a class="nav__link" href="#process">Our Process</a>
         <a class="nav__link" href="#gallery">Gallery</a>
@@ -46,9 +59,12 @@
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- =========================
+       ✅ HIGHLIGHT: HERO
+       ========================= -->
   <section class="hero" id="top">
     <div class="container hero__wrap">
+
       <div class="hero__content">
         <div class="kicker">
           <span class="kicker__text">LUXYNEST CLEANING</span>
@@ -73,22 +89,25 @@
       </div>
 
       <div class="hero__media">
-        <img src="images/hero-luxury-interior.jpg" alt="Bright luxury interior showcasing a pristine space" loading="eager" />
+        <!-- ✅ HIGHLIGHT: HERO IMAGE PATH -->
+        <img src="images/hero-luxury-interior.jpg" alt="Bright luxury interior showcasing a pristine space" loading="eager">
       </div>
+
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- =========================
+       ✅ HIGHLIGHT: SERVICES
+       ========================= -->
   <section id="services">
     <div class="container">
       <div class="kicker">
         <span class="kicker__text">Services</span>
         <span class="kicker__line" aria-hidden="true"></span>
       </div>
+
       <h2>Curated Care for Homes & Offices</h2>
-      <p>
-        We keep services simple, premium, and consistent. Every visit follows a white-glove checklist tailored to your space.
-      </p>
+      <p>We keep services simple, premium, and consistent. Every visit follows a white-glove checklist tailored to your space.</p>
 
       <div class="grid grid--3">
         <div class="card">
@@ -118,44 +137,47 @@
         </div>
       </div>
 
-      <section id="service-pages">
-        <div class="container" style="padding:0;">
-          <div class="kicker">
-            <span class="kicker__text">Service Pages</span>
-            <span class="kicker__line" aria-hidden="true"></span>
-          </div>
+      <!-- =========================
+           ✅ HIGHLIGHT: SERVICE PAGES GRID
+           ========================= -->
+      <div class="spacer"></div>
 
-          <h2>Explore Each Service</h2>
-          <p>Clear scopes, transparent estimating, and premium execution—choose the service you need.</p>
+      <div class="kicker">
+        <span class="kicker__text">Service Pages</span>
+        <span class="kicker__line" aria-hidden="true"></span>
+      </div>
 
-          <div class="grid grid--3">
-            <a class="card" href="standard.html" style="text-decoration:none;">
-              <h3>Standard Cleaning</h3>
-              <p>Routine maintenance for consistently pristine spaces.</p>
-            </a>
+      <h2>Explore Each Service</h2>
+      <p>Clear scopes, transparent estimating, and premium execution—choose the service you need.</p>
 
-            <a class="card" href="deep-cleaning.html" style="text-decoration:none;">
-              <h3>Deep Cleaning</h3>
-              <p>A comprehensive reset for detail zones and buildup.</p>
-            </a>
+      <div class="grid grid--3">
+        <a class="card card--link" href="standard.html">
+          <h3>Standard Cleaning</h3>
+          <p>Routine maintenance for consistently pristine spaces.</p>
+        </a>
+        <a class="card card--link" href="deep-cleaning.html">
+          <h3>Deep Cleaning</h3>
+          <p>A comprehensive reset for detail zones and buildup.</p>
+        </a>
+        <a class="card card--link" href="move-in-move-out.html">
+          <h3>Move-In / Move-Out</h3>
+          <p>White-glove transitions for handover-ready results.</p>
+        </a>
+      </div>
 
-            <a class="card" href="move-in-move-out.html" style="text-decoration:none;">
-              <h3>Move-In / Move-Out</h3>
-              <p>White-glove transitions for handover-ready results.</p>
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   </section>
 
-  <!-- Process -->
+  <!-- =========================
+       ✅ HIGHLIGHT: PROCESS
+       ========================= -->
   <section id="process">
     <div class="container">
       <div class="kicker">
         <span class="kicker__text">Our Process</span>
         <span class="kicker__line" aria-hidden="true"></span>
       </div>
+
       <h2>Luxury Is in the Details</h2>
       <p>Simple steps, exceptional results—every time.</p>
 
@@ -176,58 +198,63 @@
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section id="gallery">
+  <!-- =========================
+       ✅ HIGHLIGHT: GALLERY (CLEAN GRID FROM SCRATCH)
+       ========================= -->
+  <section id="gallery" class="gallery-section">
     <div class="container">
       <div class="kicker">
         <span class="kicker__text">Gallery</span>
         <span class="kicker__line" aria-hidden="true"></span>
       </div>
-      <h2>Pristine Spaces, Curated Results</h2>
-      <p>Use fewer, higher-quality images for a more luxurious feel. Replace the placeholders below with your own.</p>
 
-      <div class="gallery">
-        <a class="gallery__item" href="#" aria-label="Upper Saddle River Residence">
-          <img src="images/gallery-1.jpg" alt="Luxury kitchen cleaned and polished" loading="lazy" />
-          <div class="gallery__label">
-            <strong>Upper Saddle River Residence</strong>
-            <span>Weekly Signature Care</span>
+      <h2>Pristine Spaces</h2>
+      <p>Even layouts. Clean presentation. Luxury consistency.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="images/gallery-1.jpg" alt="Luxury kitchen cleaning">
+          <div class="gallery-overlay">
+            <strong>Upper Saddle River</strong>
+            <span>Weekly Cleaning</span>
           </div>
-        </a>
+        </div>
 
-        <div class="gallery__stack">
-          <a class="gallery__item" href="#" aria-label="Ridgewood Office">
-            <img src="images/gallery-2.jpg" alt="Bright office cleaned and refreshed" loading="lazy" />
-            <div class="gallery__label">
-              <strong>Ridgewood Office</strong>
-              <span>Evening Refresh</span>
-            </div>
-          </a>
+        <div class="gallery-card">
+          <img src="images/gallery-2.jpg" alt="Office cleaning">
+          <div class="gallery-overlay">
+            <strong>Ridgewood Office</strong>
+            <span>Evening Service</span>
+          </div>
+        </div>
 
-          <a class="gallery__item" href="#" aria-label="Hoboken Apartment">
-            <img src="images/gallery-3.jpg" alt="Luxury bathroom cleaned with shine" loading="lazy" />
-            <div class="gallery__label">
-              <strong>Hoboken Apartment</strong>
-              <span>Deep Reset</span>
-            </div>
-          </a>
+        <div class="gallery-card">
+          <img src="images/gallery-3.jpg" alt="Bathroom deep cleaning">
+          <div class="gallery-overlay">
+            <strong>Hoboken Apartment</strong>
+            <span>Deep Clean</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Estimation -->
+  <!-- =========================
+       ✅ HIGHLIGHT: ESTIMATION FORM + LIVE PRICE CALC
+       ========================= -->
   <section id="estimation">
     <div class="container">
       <div class="kicker">
         <span class="kicker__text">Estimation</span>
         <span class="kicker__line" aria-hidden="true"></span>
       </div>
+
       <h2>Request a Private Quote</h2>
       <p>Share a few details and we’ll respond with pricing and availability.</p>
 
       <div class="surface">
         <form class="form" id="quoteForm">
+
           <div class="form__row">
             <div class="field">
               <label for="serviceType">Service Type</label>
@@ -259,7 +286,8 @@
               <select id="beds" name="beds" required>
                 <option value="" selected disabled>Select</option>
                 <option value="0">Studio</option>
-                <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5+</option>
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5+</option>
               </select>
             </div>
 
@@ -267,57 +295,48 @@
               <label for="baths">Bathrooms</label>
               <select id="baths" name="baths" required>
                 <option value="" selected disabled>Select</option>
-                <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4+</option>
+                <option value="1">1</option><option value="2">2</option>
+                <option value="3">3</option><option value="4">4+</option>
               </select>
             </div>
           </div>
 
           <div class="field">
             <label>Add-ons</label>
-            <div class="grid" style="gap:10px;">
-              <label style="letter-spacing:0; text-transform:none; font-size:14px; color:rgba(17,17,17,.80);">
-                <input type="checkbox" id="addonFridge" /> Inside Fridge (+$35)
-              </label>
-              <label style="letter-spacing:0; text-transform:none; font-size:14px; color:rgba(17,17,17,.80);">
-                <input type="checkbox" id="addonOven" /> Inside Oven (+$35)
-              </label>
-              <label style="letter-spacing:0; text-transform:none; font-size:14px; color:rgba(17,17,17,.80);">
-                <input type="checkbox" id="addonCabinets" /> Inside Cabinets (+$45)
-              </label>
-              <label style="letter-spacing:0; text-transform:none; font-size:14px; color:rgba(17,17,17,.80);">
-                <input type="checkbox" id="addonWindows" /> Interior Windows (+$60)
-              </label>
+            <div class="addons">
+              <label class="addon"><input type="checkbox" id="addonFridge"> Inside Fridge (+$35)</label>
+              <label class="addon"><input type="checkbox" id="addonOven"> Inside Oven (+$35)</label>
+              <label class="addon"><input type="checkbox" id="addonCabinets"> Inside Cabinets (+$45)</label>
+              <label class="addon"><input type="checkbox" id="addonWindows"> Interior Windows (+$60)</label>
             </div>
           </div>
 
-          <div class="surface" style="margin-top:10px;">
-            <div style="display:flex; justify-content:space-between; gap:12px; align-items:center;">
-              <div>
-                <div style="font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:rgba(17,17,17,.60);">Estimated Total</div>
-                <div id="estimateTotal" style="font-family:'Playfair Display',serif; font-size:34px; line-height:1.1;">—</div>
-                <div id="estimateRange" style="color:rgba(17,17,17,.65); font-size:14px; margin-top:6px;"></div>
-              </div>
-              <a class="btn btn--secondary" href="#contact">Ask a Question</a>
+          <div class="estimate-box">
+            <div class="estimate-left">
+              <div class="estimate-kicker">Estimated Total</div>
+              <div id="estimateTotal" class="estimate-total">—</div>
+              <div id="estimateRange" class="estimate-range"></div>
             </div>
-            <p class="note" style="margin:10px 0 0;">
+            <a class="btn btn--secondary" href="#contact">Ask a Question</a>
+            <p class="note estimate-note">
               Estimates are guidelines; final pricing may adjust for condition, pets, heavy buildup, or special requests.
             </p>
           </div>
 
-          <div class="form__row" style="margin-top:12px;">
+          <div class="form__row">
             <div class="field">
               <label for="name">Full Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
             </div>
             <div class="field">
               <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(###) ###-####" required />
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(###) ###-####" required>
             </div>
           </div>
 
           <div class="field">
             <label for="city">City (NJ)</label>
-            <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="e.g., Ridgewood" required />
+            <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="e.g., Ridgewood" required>
           </div>
 
           <div class="field">
@@ -331,13 +350,16 @@
     </div>
   </section>
 
-  <!-- Reviews -->
+  <!-- =========================
+       ✅ HIGHLIGHT: REVIEWS
+       ========================= -->
   <section id="reviews">
     <div class="container">
       <div class="kicker">
         <span class="kicker__text">Reviews</span>
         <span class="kicker__line" aria-hidden="true"></span>
       </div>
+
       <h2>Trusted for Consistent Excellence</h2>
       <p>Replace these with real testimonials (first name + town works great for trust).</p>
 
@@ -358,114 +380,113 @@
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- =========================
+       ✅ HIGHLIGHT: FAQ
+       ========================= -->
   <section id="faq">
     <div class="container">
       <div class="kicker">
         <span class="kicker__text">FAQ</span>
         <span class="kicker__line" aria-hidden="true"></span>
       </div>
-      <h2>Answers, Clearly</h2>
-      <p>Keep FAQ short and confident. Luxury brands don’t over-explain.</p>
 
-      <div class="grid" style="gap:12px;">
+      <h2>Answers, Clearly</h2>
+      <p>Short, confident, luxury tone.</p>
+
+      <div class="faq">
         <details>
-          <summary>
-            What areas do you serve?
-            <span class="chev" aria-hidden="true"></span>
-          </summary>
+          <summary>What areas do you serve? <span class="chev" aria-hidden="true"></span></summary>
           <p>We serve locations across New Jersey. Share your city in the quote request and we’ll confirm availability.</p>
         </details>
 
         <details>
-          <summary>
-            Do you bring supplies?
-            <span class="chev" aria-hidden="true"></span>
-          </summary>
+          <summary>Do you bring supplies? <span class="chev" aria-hidden="true"></span></summary>
           <p>Yes—unless you prefer specific products. We can tailor service to your preferences.</p>
         </details>
 
         <details>
-          <summary>
-            How do you ensure consistent quality?
-            <span class="chev" aria-hidden="true"></span>
-          </summary>
+          <summary>How do you ensure consistent quality? <span class="chev" aria-hidden="true"></span></summary>
           <p>Every visit follows a white-glove checklist and a final quality check before completion.</p>
         </details>
 
         <details>
-          <summary>
-            What’s included in a deep clean?
-            <span class="chev" aria-hidden="true"></span>
-          </summary>
+          <summary>What’s included in a deep clean? <span class="chev" aria-hidden="true"></span></summary>
           <p>A deep reset focuses on detail areas and build-up, with extra attention to kitchens, bathrooms, and high-touch zones.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- =========================
+       ✅ HIGHLIGHT: CONTACT
+       ========================= -->
   <section id="contact">
     <div class="container">
       <div class="kicker">
         <span class="kicker__text">Contact</span>
         <span class="kicker__line" aria-hidden="true"></span>
       </div>
+
       <h2>Let’s Make Your Space Exceptional</h2>
-      <p>Use this area to show your real contact details and service hours.</p>
+      <p>Show real contact details and service hours clearly.</p>
 
       <div class="grid grid--2">
         <div class="surface">
-          <h3 style="margin-bottom:10px;">Direct Contact</h3>
-          <p style="margin-bottom:10px;">
-            <strong>Email:</strong> <a href="mailto:Luxynestcleaning@gmail.com">hello@luxynest.com</a><br/>
-            <strong>Phone:</strong> <a href="tel:+12015550123">(908) 899-3588</a><br/>
+          <h3 class="miniTitle">Direct Contact</h3>
+          <p class="contactText">
+            <strong>Email:</strong> <a href="mailto:Luxynestcleaning@gmail.com">Luxynestcleaning@gmail.com</a><br>
+            <strong>Phone:</strong> <a href="tel:+19088993588">(908) 899-3588</a><br>
             <strong>Service Area:</strong> New Jersey
           </p>
           <a class="btn btn--primary" href="#estimation">Request a Private Quote</a>
         </div>
 
         <div class="surface">
-          <h3 style="margin-bottom:10px;">Hours</h3>
-          <p style="margin-bottom:10px;">
-            Mon–Fri: 8:00 AM – 6:00 PM<br/>
+          <h3 class="miniTitle">Hours</h3>
+          <p class="contactText">
+            Mon–Fri: 8:00 AM – 6:00 PM<br>
             Sat | Sun: By request
           </p>
-          <p class="note">Tip: luxury feel improves when hours, process, and expectations are clear.</p>
+          <p class="note">Luxury feel improves when expectations are clear.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- =========================
+       ✅ HIGHLIGHT: FOOTER
+       ========================= -->
   <footer>
     <div class="container footer__grid">
       <div>
-        <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
-          <span class="brand__mark" style="border-color: rgba(201,162,77,.8); color:#fff;">L</span>
+        <div class="footerBrand">
+          <span class="brand__mark footerMark">L</span>
           <div>
-            <div style="font-family:'Playfair Display',serif; font-size:18px; color:#fff;">LuxyNest Cleaning</div>
-            <div style="font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.65); margin-top:2px;">Luxury Cleaning Across New Jersey</div>
+            <div class="footerName">LuxyNest Cleaning</div>
+            <div class="footerTag">Luxury Cleaning Across New Jersey</div>
           </div>
         </div>
-        <p>Discreet, consistent, detail-driven service for homes and offices that expect excellence.</p>
-        <p style="font-size:13px; color:rgba(255,255,255,.60); margin-top:10px;">
-          © <span id="year"></span> LuxyNest. All rights reserved.
-        </p>
+
+        <p class="footerDesc">Discreet, consistent, detail-driven service for homes and offices that expect excellence.</p>
+        <p class="footerFine">© <span id="year"></span> LuxyNest. All rights reserved.</p>
       </div>
 
       <div class="footer__links">
-        <a href="#services">Services</a><br/>
-        <a href="#process">Our Process</a><br/>
-        <a href="#gallery">Gallery</a><br/>
-        <a href="#estimation">Estimation</a><br/>
-        <a href="#reviews">Reviews</a><br/>
-        <a href="#faq">FAQ</a><br/>
+        <a href="#services">Services</a>
+        <a href="#process">Our Process</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#estimation">Estimation</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
   </footer>
 
+  <!-- =========================
+       ✅ HIGHLIGHT: JAVASCRIPT
+       (Nav + Year + Pricing Calculator)
+       ========================= -->
   <script>
     // Mobile nav toggle
     const toggle = document.getElementById('navToggle');
@@ -492,10 +513,8 @@
 
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 
-  <script>
-    // ---- Pricing model (EDIT THESE ANYTIME) ----
+    // ----- Pricing Model -----
     const PRICING = {
       standard: { base: 140, perBed: 18, perBath: 28, perSqftK: 22, min: 160 },
       deep:     { base: 210, perBed: 22, perBath: 38, perSqftK: 32, min: 275 },
@@ -510,7 +529,7 @@
     };
 
     const $ = (id) => document.getElementById(id);
-    function money(n){ return n.toLocaleString(undefined,{style:'currency',currency:'USD'}); }
+    const money = (n) => n.toLocaleString(undefined,{style:'currency',currency:'USD'});
 
     function calcEstimate(){
       const type = $('serviceType')?.value;
@@ -548,7 +567,7 @@
 
     calcEstimate();
 
-    // ✅ Only ONE submit handler
+    // Demo submit (replace later with real email/backend)
     document.getElementById('quoteForm')?.addEventListener('submit', (e) => {
       e.preventDefault();
       alert('Quote request submitted (demo). Connect this form to your email or backend.');
