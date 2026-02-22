@@ -678,4 +678,54 @@ footer p{ color: rgba(255,255,255,.70); }
     line-height: 1.25 !important;
     margin-top: 4px !important;
   }
+}/* =========================================================
+   FINAL MOBILE GALLERY LABEL OVERRIDE (kills vertical pill)
+   ========================================================= */
+@media (max-width: 600px){
+
+  /* Force ALL gallery labels to be bottom overlays */
+  .gallery__label{
+    position: absolute !important;
+    top: auto !important;
+    bottom: 14px !important;
+    left: 14px !important;
+    right: 14px !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    padding: 14px 14px !important;
+    border-radius: 16px !important;
+
+    writing-mode: horizontal-tb !important;
+    transform: none !important;
+  }
+
+  /* Explicitly kill vertical/side label behavior */
+  .gallery__stack .gallery__label,
+  .gallery .gallery__label{
+    writing-mode: horizontal-tb !important;
+    transform: none !important;
+    left: 14px !important;
+    right: 14px !important;
+    bottom: 14px !important;
+  }
+
+  /* Give images room so labels don’t get tall */
+  .gallery__item img{
+    height: 320px !important;
+    object-fit: cover !important;
+  }
+
+  /* Normalize text */
+  .gallery__label strong{
+    font-size: 16px !important;
+    line-height: 1.15 !important;
+  }
+
+  .gallery__label span{
+    font-size: 13px !important;
+    line-height: 1.25 !important;
+    margin-top: 4px !important;
+  }
 }
