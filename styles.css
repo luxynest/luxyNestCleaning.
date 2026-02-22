@@ -633,99 +633,60 @@ footer p{ color: rgba(255,255,255,.70); }
   .media-card img{
     height: 360px;
   }
-}/* =========================================================
-   FINAL GALLERY LABEL PATCH (mobile-safe, no other changes)
+/* =========================================================
+   GALLERY LABEL FIX (MOBILE + DESKTOP CONSISTENT)
    Paste at VERY END of styles.css
    ========================================================= */
 
-/* Ensure the label positions correctly inside each item */
-.gallery__item{ position: relative; }
-
-/* Force label to always be a bottom overlay (kills old vertical styles if any exist) */
-.gallery__label{
-  position: absolute !important;
-  top: auto !important;
-  left: 14px !important;
-  right: 14px !important;
-  bottom: 14px !important;
-
-  width: auto !important;
-  height: auto !important;
-
-  writing-mode: horizontal-tb !important;
-  transform: none !important;
+/* The card must be the positioning parent */
+.gallery__item{
+  position: relative;
 }
 
-/* Mobile-only tuning so it looks luxury + consistent */
+/* Always a bottom overlay label */
+.gallery__label{
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  top: auto;
+
+  width: auto;
+  max-width: none;
+  height: auto;
+
+  padding: 14px 14px;
+  border-radius: 16px;
+
+  background: rgba(17,17,17,.55);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.15);
+  backdrop-filter: blur(8px);
+
+  /* ✅ kills vertical / rotated pill */
+  writing-mode: horizontal-tb;
+  transform: none;
+}
+
+.gallery__label strong{
+  display:block;
+  font-weight: 600;
+  letter-spacing: .01em;
+  line-height: 1.15;
+}
+
+.gallery__label span{
+  display:block;
+  opacity: .88;
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+/* Mobile: give images consistent height so label never stretches */
 @media (max-width: 600px){
   .gallery__item img{
-    height: 320px !important;   /* gives room for the label */
-    object-fit: cover !important;
-  }
-
-  .gallery__label{
-    padding: 14px 14px !important;
-    border-radius: 16px !important;
-  }
-
-  .gallery__label strong{
-    font-size: 16px !important;
-    line-height: 1.15 !important;
-  }
-
-  .gallery__label span{
-    font-size: 13px !important;
-    line-height: 1.25 !important;
-    margin-top: 4px !important;
-  }
-}/* =========================================================
-   FINAL MOBILE GALLERY LABEL OVERRIDE (kills vertical pill)
-   ========================================================= */
-@media (max-width: 600px){
-
-  /* Force ALL gallery labels to be bottom overlays */
-  .gallery__label{
-    position: absolute !important;
-    top: auto !important;
-    bottom: 14px !important;
-    left: 14px !important;
-    right: 14px !important;
-
-    width: auto !important;
-    height: auto !important;
-
-    padding: 14px 14px !important;
-    border-radius: 16px !important;
-
-    writing-mode: horizontal-tb !important;
-    transform: none !important;
-  }
-
-  /* Explicitly kill vertical/side label behavior */
-  .gallery__stack .gallery__label,
-  .gallery .gallery__label{
-    writing-mode: horizontal-tb !important;
-    transform: none !important;
-    left: 14px !important;
-    right: 14px !important;
-    bottom: 14px !important;
-  }
-
-  /* Give images room so labels don’t get tall */
-  .gallery__item img{
-    height: 320px !important;
-    object-fit: cover !important;
-  }
-
-  /* Normalize text */
-  .gallery__label strong{
-    font-size: 16px !important;
-    line-height: 1.15 !important;
-  }
-
-  .gallery__label span{
-    font-size: 13px !important;
-    line-height: 1.25 !important;
-    margin-top: 4px !important;
+    height: 320px;
+    object-fit: cover;
   }
 }
