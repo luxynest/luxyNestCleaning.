@@ -593,4 +593,20 @@ footer{
   font-size: 13px;
   color: rgba(17,17,17,.62);
   max-width: 80ch;
+}/* Make pricing cards clickable without breaking layout */
+.price-link{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.price-link:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.08);
+}
+
+.price-link:focus{
+  outline: 2px solid rgba(201,162,77,.45);
+  outline-offset: 4px;
+  border-radius: 18px;
 }
